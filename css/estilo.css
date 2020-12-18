@@ -1,75 +1,294 @@
+body {
+    background: #B2EEF7;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar .navbar-brand img {
+    height: 45px;
+}
+.navbar .nav-item:hover .dropdown-menu {
+    display: block;
+}
+.navbar .nav-item a:hover {
+    background: #58577F;
+    color: white;
+}
+.list-group {
+    display: inline-block;
+    width: 230px;
+    min-height: 400px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.navbar .modal #login {
+    margin-top: 15px;
+    margin-left: 140px;
+    width: 180px;
+}
+.navbar .modal #crear {
+    width: 250px;
+    margin: 0px auto;
+}
+.form-inline {
+    width: 372px;
+    /*background-color: black;*/
+    margin-left: 50px;
+}
+.form-inline .form-control {
+    width: 320px;
+    margin-right: 10px;
+}
+.navbar .collapse .navbar-nav {
+    /*background-color: black;*/
+    margin-left: 50px;
+}
+.navbar .collapse .navbar-nav a:hover {
+    border-radius: 3px;
+    margin-left: 15px;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+/*ARTICLE*/
 
-.d-block {
-	height: 200px;
+section {}
+.carousel-item .d-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    width: 1100px;
+}
+.carousel {
+    width: 1100px;
+    margin: auto;
+}
+section article {
+    margin-left: 190px;
+    display: inline-block;
+}
+.productos .card {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: #058F98;
+}
+.productos .card-img-top {
+    height: 220px;
+    width: 300px;
+    margin: auto;
+    margin-top: 15px;
+}
+.productos .card .btn {
+    margin-left: 135px;
+}
+.vermas #vermas {
+	width: 150px;
+    margin: 20px 628px;
 }
 
-.list-group{
+
+
+.carousel-item .title{
+	color:#000000 ;
+	font-size: 50px;
+	background-color: white
+}
+.carousel-item .parra{
+	color:#000000 ;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: white
+}
+/*FOOTER*/
+
+:root {
+    --facebook: #141DD2;
+    --instagram: #E51760;
+    --twitter: #42AAE0;
+    --youtube:#FF0000;
+}
+.imgs {
+    background-color: #746C6C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.imgs ul li {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+}
+.imgs ul li a {
+    display: block;
+    padding: 0 10px;
+    background: #0E0D0D;
+    color: #FFFFFF;
+    line-height: 45px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+.imgs ul:hover a {
+    filter: blur(2px);
+}
+.imgs ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+.imgs ul li .facebook:hover {
+    background: var(--facebook);
+}
+.imgs ul li .instagram:hover {
+    background: var(--instagram);
+}
+.imgs ul li .twitter:hover {
+    background: var(--twitter);
+}
+.imgs ul li .youtube:hover {
+    background: var(--youtube);
+}
+.logo {
+    float: left;
+}
+.imgs .logo {
+    margin: 15px 15px;
+}
+/*COMENTARIOS*/
+
+.comentarios {
+    margin: 20px 0;
+    justify-content: center;
+}
+.form_comentarios {
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form_comentarios textarea {
+    width: 100%;
+    height: 84px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 300px;
+    min-height: 84px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+    border: 1px solid #4b65d1;
+    margin-bottom: 10px;
+
+}
+.form_comentarios #comentar {
+    background: #4b65d1;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.form_comentarios #comentar:hover {
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, .35);
+}
+.media {
+    border-top: 1px solid #4b65d1;
+    padding-top: 20px;
+}
+.media .p1 {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.media .botones {
+    text-align: right;
+}
+.media .nombre {
+    font-weight: bold;
+    color: #250CE0;
+    margin-bottom: 0;
+}
+.media .nombre span {
+    font-size: 12px;
+    color: #464646;
+    margin-left: 10px;
+}
+.media .texto {
+    margin-top: 10px;
+}
+.media .botones {
+    margin-bottom: 10px;
+}
+.media .botones a {
+    color: #250CE0;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/*TIENDA*/
+section .titulotienda{
+	text-align: center;
+	padding: 10px;
+}
+section .titulotienda p{
+	font-size: 20px;
+}
+
+#galeria img{
+	width: 100%;
+	height: 250px;
+	margin-top: 15px;
+}
+
+#galeria .col-lg-4{
+	margin: 0 !important;
+	padding: 25px;
+
+}
+
+#galeria img:hover{
+	border: 5px solid #FFFFFF;
+}
+
+/*APRENDE*/
+.titulovideo{
+	font-size: 40px;
+	text-align: center;
+	width: 500px;
+
+}
+.video{
+	width: 50%;
+	justify-content: flex-start;
+	margin-left: 80px;
+	margin-right: 30px;
+	margin-bottom: 15px;
+
+}
+","::after,"::before{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+.video::after{
+	content: --;
+	display: block;
+	width: 100%;
+	padding-bottom: 56.25%;
+
+}
+.sueloaprender{
+	width: 500px;
+	height:300px;
+	position: relative;
+	top: 0;
+	left: 0;
+
+}
+.sectionaorende{
 	display: inline-block;
-	width: 230px;
-
-	min-height: 400px;
-	
-	float: left;
-	margin-top: 15px;
-	margin-right: 25px;
-	margin-left: 25px;
-
+	margin-top:30px;
+	margin-bottom: 50px;
 }
-
-article{
-	width: 1025px;
-	height: 500px;
-	background-color: purple;
-	margin-left: 300px;
-	margin-top: 35px;
-	margin-right: 150px;
-}
-
-footer{
-	background-color: green;
-	width: 1300px;
-	height: 125px;
-	margin-left: 25px;
-	margin-top: 15px;
-	margin-right: 25px;
-	margin-bottom: 25px;
-}
-
-
-	
-
-}
-.copy{
-	width: 800px;
-	height: 115px;
-	margin-left: 25px;
-
-	background-color: red;
-}
-
-.redes{
-
-	height: auto;
-	width: auto;
-	max-width: 50px;
-	max-height: 50px;
-	margin-left: 850px;
-
-}
- section{
- 	background-color: red;
- 	width: 290px;
- 	float: left;
- }
-
- #face{
- 	height: 15px;
- }
-
- .divparrafo{
- 	width: 700px;
- 	background-color: red;
- }
- .general{
- 	float: left;
- }
